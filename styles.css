@@ -1,0 +1,157 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Шапка */
+header {
+    background-color: #f4f4f4;
+    padding: 15px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Логотип */
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+/* Навигация */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #0073e6;
+}
+
+/* Поиск */
+.search input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Кнопки смены языка */
+.language-switcher {
+    display: flex;
+    gap: 10px;
+}
+
+.language-switcher button {
+    padding: 8px 12px;
+    border: 1px solid #0073e6;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #0073e6;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.language-switcher button:hover {
+    background-color: #0073e6;
+    color: #fff;
+}
+
+/* Основной контент */
+main {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.main-news {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-news h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.main-news video {
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* Футер */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .language-switcher {
+        margin-top: 15px;
+    }
+
+    .main-news h1 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пиксо</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="News Logo" id="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" id="news-link">Новости</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text" id="search-placeholder" placeholder="Поиск...">
+            </div>
+            <div class="language-switcher">
+                <button id="lang-ru">Русский</button>
+                <button id="lang-en">English</button>
+                <button id="lang-ar">عربي</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <div class="container">
+            <section class="main-news">
+                <h1 id="main-title">Главная новость дня</h1>
+                <video controls width="100%" id="main-video">
+                    <source src="videos/russian/main-news.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео. Загрузите <a href="videos/russian/main-news.mp4">видео</a>.
+                </video>
+            </section>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Пиксо. Все права защищены.</p>
+            <ul>
+                <li><a href="#" id="about-link">О нас</a></li>
+                <li><a href="#" id="contacts-link">Контакты</a></li>
+                <li><a href="#" id="privacy-link">Политика конфиденциальности</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
